@@ -51,10 +51,7 @@ $ bin/kafka-console-consumer.sh --topic first --from-beginning --bootstrap-serve
 You can test the application with Curl:
 
 ```bash
-curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{"message": "Curl test"}' \   
-  http://localhost:8080/api/v1/message
+curl --header "Content-Type: application/json" --request POST --data '{"message": "Curl test"}' http://localhost:8080/api/v1/message
 ```
 
 If everything is OK, you need to see in the third session (3):
