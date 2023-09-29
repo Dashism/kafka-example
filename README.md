@@ -1,10 +1,6 @@
-
 # kafka-example
 
 This is a simple project to learn how to use Kafka with Spring Boot.
-
-
-
 
 ## Installation
 
@@ -65,6 +61,7 @@ In this case, the message will be:
 ```bash
 message from API : [Postman test]
 ```
+
 ## API Reference
 
 #### Test Kafka API
@@ -80,4 +77,15 @@ JSON Body :
 }
 ```
 
+## Terminate the kafka environment
 
+Now that you reached the end of the quickstart, feel free to tear down the Kafka environment—or continue playing around.
+
+Stop the consumer clients with Ctrl-C, if you haven't done so already. (Session (3))
+Stop the Kafka broker with Ctrl-C. (Session (2))
+Lastly stop the ZooKeeper server with Ctrl-C. (Session (1))
+
+If you also want to delete any data of your local Kafka environment including any events you have created along the way, run the command:
+```bash
+$ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
+```
